@@ -227,7 +227,7 @@ function findLongestSubstring(str) {
 // // 6
 // console.log(findLongestSubstring('thecatinthehat'))
 // // 7                    j
-console.log(findLongestSubstring('bbbbbb')) 
+// console.log(findLongestSubstring('bbbbbb')) 
 // // 1
 // console.log(findLongestSubstring('longestsubstring'))
 // // 8
