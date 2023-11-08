@@ -34,3 +34,23 @@ function binarySearch(arr, target){
   }
 
 console.log(binarySearch([1,2,3,4,5], 5))
+
+
+
+/// NAIVE STRING SEARCH ALGORITHM
+//find the amount of times a given sub string occurs in a given str
+
+function naiveSubStr(str, subStr){
+  let count = 0
+  for (let i = 0; i < str.length; i++) {
+  let current = i
+    for (let j = 0; j < subStr.length; j++) {
+      if(str[current] !== subStr[j]) break
+      current++
+      if(j === subStr.length - 1) count++
+    }
+  }
+  return count
+}
+
+console.log(naiveSubStr('the time of the yearn the im imim', 'im'));
